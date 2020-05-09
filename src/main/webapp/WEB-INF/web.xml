@@ -4,4 +4,12 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>calculateResult</servlet-name>
+  	<servlet-class>ui.calculateResult</servlet-class>
+  </servlet>
+  <servlet-mapping>
+ 	<servlet-name>calculateResult</servlet-name>
+ 	<url-pattern>/calculateResult</url-pattern>
+  </servlet-mapping>
 </web-app>
