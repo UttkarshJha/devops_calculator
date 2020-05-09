@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>Web Calculator</title>
+</head>
+<body>
+<script>
+	function addexp(e){
+		var epr = document.getElementsByName("exp")[0];
+		if(isNaN(e.innerText) || isNaN(epr.value.charAt(epr.value.length-1)))
+			epr.value = epr.value+" "+e.innerText;
+		else
+			epr.value = epr.value+e.innerText;
+		
+	}
+</script>
+<script>
+	function clearexp(){
+		var epr = document.getElementsByName("exp")[0];
+		epr.value = "";
+	}
+</script>
+<h1>Calculator</h1>
+<form method="post">
+	<input type="text"  name="exp" placeholder="start calculating" readonly/><br/>
+	<div class="calc-keys">
+		<button type="button"  name="one" onclick="addexp(this);">1</button>
+		<button type="button"  name="two" onclick="addexp(this);">2</button>
+		<button type="button"  name="three" onclick="addexp(this);">3</button>
+		<button type="button"  name="add" onclick="addexp(this);">+</button>
+		<button type="button"  name="sub" onclick="addexp(this);">-</button><br/>
+		<button type="button"  name="four" onclick="addexp(this);">4</button>
+		<button type="button"  name="five" onclick="addexp(this);">5</button>
+		<button type="button"  name="six" onclick="addexp(this);">6</button>
+		<button type="button"  name="mul" onclick="addexp(this);">x</button>
+		<button type="button"  name="div" onclick="addexp(this);">/</button><br/>
+		<button type="button"  name="seven" onclick="addexp(this);">7</button>
+		<button type="button"  name="eight" onclick="addexp(this);">8</button>
+		<button type="button"  name="nine" onclick="addexp(this);">9</button>
+		<button type="button"  name="leftpar" onclick="addexp(this);">(</button>
+		<button type="button"  name="rightpar" onclick="addexp(this);">)</button><br/>
+		<button type="button"  name="zero" onclick="addexp(this);">0</button>
+		<button type="button"  name="decimal" onclick="addexp(this);">.</button>	
+		<button type="button"  name="power" onclick="addexp(this);">^</button>
+		<button type="button"  name="clr" onclick="clearexp();"    >C</button>
+		<input type="submit"  value="=">
+		
+	</div>
+</form>
+</body>
+</html>
