@@ -92,14 +92,14 @@ public class calculateResult extends HttpServlet {
             return a + b; 
         case '-': 
             return a - b; 
-       /* case 'x': 
+        case 'x': 
             return a * b; 
         case '/': 
             if (b == 0) 
                 return Integer.MAX_VALUE; 
             return a / b; 
         case '^':
-        	return (int)Math.pow(a, b); */
+        	return (int)Math.pow(a, b); 
         } 
         return 0; 
     }
