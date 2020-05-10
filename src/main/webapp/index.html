@@ -1,6 +1,7 @@
 <html>
 <head>
 <title>Web Calculator</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <script>
@@ -23,7 +24,7 @@
 <h2>Put "=" to evaluate your expression.</h2>
 
 <form method="post" action="calculateResult">
-	<input type="text"  name="exp" placeholder="start calculating" readonly/><br/>
+	<input type="text"  name="exp" class="inputscreen" placeholder="start calculating" readonly/><br/>
 	<div class="calc-keys">
 		<button type="button"  name="one" onclick="addexp(this);">1</button>
 		<button type="button"  name="two" onclick="addexp(this);">2</button>
