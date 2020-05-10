@@ -1,3 +1,7 @@
+h1,h2{
+	text-align:center;
+}
+
 .inputscreen {
       width: 82%;
 	 border: 2px groove red;
@@ -7,7 +11,7 @@
 	letter-spacing: 3px;
       padding:10px 20px;
       
-      font-size: 8px;
+      font-size: 10px;
 	color: rgba(156,172,56,0.6);
 	background-color: lightgrey;
     }
