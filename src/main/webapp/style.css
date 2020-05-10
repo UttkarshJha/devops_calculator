@@ -2,13 +2,13 @@
       width: 82%;
 	 border: 2px groove red;
   border-radius: 3px;
-      text-align: center;
+      text-align: right;
 	text-shadow: 1px 1px;
 	letter-spacing: 3px;
       padding:10px 20px;
       
-      font-size: 14px;
-	color: rgba(226,172,56,0.6);
+      font-size: 8px;
+	color: rgba(156,172,56,0.6);
 	background-color: lightgrey;
     }
 
